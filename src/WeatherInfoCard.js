@@ -14,7 +14,7 @@ const WeatherInfoCard = (props) => {
 
                     {props.city}
                     <div>Temperature: {temp}</div>
-                    <img style={{height:'200px'}}src={iconURL}/>
+                    <img style={{height:'200px'}}src={iconURL} alt="Temperature check"/>
                 </CardContent>
 
 

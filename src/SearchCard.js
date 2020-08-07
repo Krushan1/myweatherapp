@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, TextField, Button, Card, CardContent } from '@material-ui/core';
+import { TextField, Button, Card, CardContent } from '@material-ui/core';
 import {createMuiTheme } from '@material-ui/core/styles';
 import './App.css';
 import WeatherCard  from './WeatherCard';
@@ -60,7 +60,7 @@ class SearchCard extends React.Component {
     handlePlaceSelect() {
         let addressObject = this.autocomplete.getPlace()
         console.log(addressObject);
-        let address = addressObject.address_components
+        // let address = addressObject.address_components
         // this.setState({
 
         //     city: address[0].long_name,
