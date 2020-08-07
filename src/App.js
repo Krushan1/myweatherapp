@@ -1,6 +1,6 @@
 import React from 'react';
 import {Button, Container, TextField } from '@material-ui/core';
-import SearchIcon from '@material-ui/icons/Search';
+import {SearchIcon} from '@material-ui/icons/Search';
 import {Client} from "@googlemaps/google-maps-services-js";
 import SearchCard  from "./SearchCard";
 import './App.css';
