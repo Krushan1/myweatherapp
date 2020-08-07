@@ -70,10 +70,16 @@ class SearchCard extends React.Component {
     
     render() {
         return (
+
             <div>
+                 <div className="card-wrapper">
+                    Just a test
+                </div>
                 <header className="App-header">
+               
                     {/* <img src={"https://cdn3.iconfinder.com/data/icons/symbol-1-1/36/12-512.png"} className="App-logo" alt="logo" /> */}
                 <div className="card-wrapper">
+                
                     <Card className="search-container">
                         <CardContent>
                             <h4>Search weather</h4>
