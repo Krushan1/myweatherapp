@@ -1,6 +1,6 @@
 import React from 'react';
 import {Button, Container, TextField } from '@material-ui/core';
-import {SearchIcon} from '@material-ui/icons/Search';
+// import {SearchIcon} from '@material-ui/icons/Search';
 import {Client} from "@googlemaps/google-maps-services-js";
 import SearchCard  from "./SearchCard";
 import './App.css';
@@ -69,7 +69,7 @@ render(){
             {/* <input  id="outlined-basic" onChange={(e) => this.handleChange(e)}/> */}
             </span>
             <span>
-            <Button size="small" variant="contained" color="primary" onClick={() => this.onButtonClick()} endIcon={<SearchIcon/>}> Search </Button>
+            <Button size="small" variant="contained" color="primary" onClick={() => this.onButtonClick()}> Search </Button>
             </span>
           </div>
         </Container>
