@@ -1,0 +1,7 @@
+{
+    "appService.zipIgnorePattern": [
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/a94dea4c-e95f-4c20-a311-da7b8a5e979a/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/MyWeatherApp",
+    "appService.deploySubpath": ""
+}
