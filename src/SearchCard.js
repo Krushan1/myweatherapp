@@ -1,5 +1,5 @@
 import React from 'react'
-import { TextField, Button, Card, CardContent } from '@material-ui/core';
+import { TextField, Button } from '@material-ui/core';
 import { createMuiTheme } from '@material-ui/core/styles';
 import './App.css';
 import WeatherCard from './WeatherCard';

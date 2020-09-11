@@ -1,5 +1,4 @@
 import React from 'react';
-import { Card, CardContent } from '@material-ui/core';
 const WeatherInfoCard = (props) => {
     console.log(props);
     const weatherInfo = Object.assign({}, props.weatherInfo);
