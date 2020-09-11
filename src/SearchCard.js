@@ -1,24 +1,24 @@
 import React from 'react'
 import { TextField, Button, Card, CardContent } from '@material-ui/core';
-import {createMuiTheme } from '@material-ui/core/styles';
+import { createMuiTheme } from '@material-ui/core/styles';
 import './App.css';
-import WeatherCard  from './WeatherCard';
+import WeatherCard from './WeatherCard';
 createMuiTheme({
     palette: {
-      primary: {
-        light: '#757ce8',
-        main: '#3f50b5',
-        dark: '#002884',
-        contrastText: '#fff',
-      },
-      secondary: {
-        light: '#ff7961',
-        main: '#f44336',
-        dark: '#ba000d',
-        contrastText: '#000',
-      },
+        primary: {
+            light: '#757ce8',
+            main: '#3f50b5',
+            dark: '#002884',
+            contrastText: '#fff',
+        },
+        secondary: {
+            light: '#ff7961',
+            main: '#f44336',
+            dark: '#ba000d',
+            contrastText: '#000',
+        },
     },
-  });
+});
 class SearchCard extends React.Component {
     constructor(props) {
         super(props)
@@ -40,7 +40,7 @@ class SearchCard extends React.Component {
     initialState() {
         return {
             city: '',
-            
+
         }
     }
 
@@ -50,7 +50,7 @@ class SearchCard extends React.Component {
     }
 
     handleSubmit(event) {
-       this.setState({city: document.getElementById('autocomplete').value})
+        this.setState({ city: document.getElementById('autocomplete').value })
         //event.preventDefault()
         //alert(document.getElementById('autocomplete').value)
         //this.props.dispatch(addParlor(this.state))
@@ -67,43 +67,37 @@ class SearchCard extends React.Component {
 
         // })
     }
-    
+
     render() {
         return (
 
             <div>
-                 <div className="card-wrapper">
-                    Just a test
-                </div>
-                <header className="App-header">
-               
-                    {/* <img src={"https://cdn3.iconfinder.com/data/icons/symbol-1-1/36/12-512.png"} className="App-logo" alt="logo" /> */}
-                <div className="card-wrapper">
-                
-                    <Card className="search-container">
-                        <CardContent>
-                            <h4>Search weather</h4>
+
+                <div className="search-content">
+                    <div>
+                        <h1>Search weather by entering any location</h1>
 
 
-                            <div className="auto-complete-form">
-                                <TextField id="autocomplete"
-                                    className="input-field"
-                                    ref="input"
-                                    type="text" />
-                                <Button className="search-button" variant="contained" color="primary" onClick={this.handleSubmit}>
-                                    Search
-                                </Button>
-                            </div>
-
-                        </CardContent>
-
-
-                    </Card>
-
-                    {this.state.city ? <WeatherCard city={this.state.city}/> : false}
+                        <div className="auto-complete-form">
+                            <TextField id="autocomplete"
+                                className="input-field"
+                                ref="input"
+                                type="text" />
+                            <Button className="search-button" variant="contained" color="primary" onClick={this.handleSubmit}>
+                                Search
+                            </Button>
+                        </div>
                     </div>
+                </div>
+
+                <header className="App-header">
+
+                    {/* <img src={"https://cdn3.iconfinder.com/data/icons/symbol-1-1/36/12-512.png"} className="App-logo" alt="logo" /> */}
+
+                    {this.state.city ? <WeatherCard city={this.state.city} /> : false}
                 </header>
-            </div>
+
+            </div >
         )
     }
 

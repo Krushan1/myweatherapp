@@ -17,7 +17,7 @@
   background-image: url("https://pixabay.com/get/52e8d74a4a55aa14f6da8c7dda79367b113ed6ec50536c48702778d2964fcc5fbb_1280.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   display: flex;
   /* flex-direction: column; */
   align-items: flex-end;
@@ -25,35 +25,49 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-.auto-complete-form{
+.search-content {
+  min-height: 30vh;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+.auto-complete-form {
   display: flex;
   align-items: flex-end;
+  justify-content: center;
 }
-.MuiPaper-root.MuiCard-root.search-container.MuiPaper-elevation1.MuiPaper-rounded{
+.MuiPaper-root.MuiCard-root.search-container.MuiPaper-elevation1.MuiPaper-rounded {
   margin: auto;
   height: 20rem;
   margin-left: 10%;
   /* margin-top: 8%;  */
 }
-.MuiPaper-root.MuiCard-root.weather-container.MuiPaper-elevation1.MuiPaper-rounded{
+.MuiPaper-root.MuiCard-root.weather-container.MuiPaper-elevation1.MuiPaper-rounded {
   margin: auto;
   height: 20rem;
   margin-left: 10%;
   /* margin-top: 8%;  */
 }
-.card-wrapper{
+.card-wrapper {
   display: grid;
   grid-auto-flow: column;
   align-self: center;
 }
 
-.MuiFormControl-root.MuiTextField-root.input-field{
+.MuiFormControl-root.MuiTextField-root.input-field {
   width: 50%;
 }
 .search-button.MuiButton-containedPrimary {
   margin-left: 5%;
+
+  background: #17141d;
 }
-.weather-container{
+.search-button.MuiButton-containedPrimary:hover {
+  background: #ffffff;
+  color: #17141d;
+ 
+}
+.weather-container {
   background-color: white;
   height: 90vh;
   color: black;

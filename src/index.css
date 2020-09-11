@@ -5,6 +5,59 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  background-color: #b794fd;
+  color: white;
+}
+.card-list {
+  display: flex;
+ 
+  overflow-x: scroll;overflow-y: hidden;
+}
+
+.card-list::-webkit-scrollbar {
+  width: 10px;
+  height: 5px;
+}
+.card-list::-webkit-scrollbar-thumb {
+  background: #fbfbfb;
+  border-radius: 50rem;
+  box-shadow: inset 2px 2px 2px hsla(0,0%,100%,.25), inset -2px -2px 2px rgba(0,0,0,.25);
+}
+
+.card-list::-webkit-scrollbar-track {
+  background: linear-gradient(90deg,#201c29,#201c29 1px,#17141d 0,#17141d);
+}
+
+.card {
+  height: 350px;
+  width: 400px;
+  min-width: 300px;
+  padding: 3rem;
+  border-radius: 16px;
+  background: #17141d;
+  box-shadow: -0.5rem 0 1.5rem #b794fd;
+  display: flex;
+  flex-direction: column;
+  transition: .3s;
+  margin-top: 15px;
+  margin-bottom: 15px;
+
+  clear: both;
+  position: relative;
+}
+.card:hover {
+  transform: translateY(-1rem);
+}
+.card:hover~.card {
+  transform: translateX(110px);
+}
+.card:not(:first-child) {
+  margin-left: -100px;
+}
+
+.card-header {
+  margin-bottom: auto;
 }
 
 code {

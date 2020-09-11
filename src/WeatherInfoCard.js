@@ -8,17 +8,68 @@ const WeatherInfoCard = (props) => {
     const iconURL = `https://openweathermap.org/img/wn/${weatherIcon}@2x.png`
     console.log(weatherInfo);
     return (
-        
-            <Card className="weather-container">
-                <CardContent>
-
+            <section className="card-list">
+                <article className="card">
+                    <header className="card-header">
                     {props.city}
-                    <div>Temperature: {temp}</div>
-                    <img style={{height:'200px'}}src={iconURL} alt="Temperature check"/>
-                </CardContent>
+                   <h2> {temp}</h2>
+                 <img style={{height:'200px'}}src={iconURL} alt="Temperature check"/>
+                    </header>
+                </article>
+                <article className="card">
+                    <header className="card-header">
+                    {props.city}
+                   <h2> {temp}</h2>
+                 <img style={{height:'200px'}}src={iconURL} alt="Temperature check"/>
+                    </header>
+                </article>
+                <article className="card">
+                    <header className="card-header">
+                    {props.city}
+                   <h2> {temp}</h2>
+                 <img style={{height:'200px'}}src={iconURL} alt="Temperature check"/>
+                    </header>
+                </article>
+                <article className="card">
+                    <header className="card-header">
+                    {props.city}
+                   <h2> {temp}</h2>
+                 <img style={{height:'200px'}}src={iconURL} alt="Temperature check"/>
+                    </header>
+                </article>
+                <article className="card">
+                    <header className="card-header">
+                    {props.city}
+                   <h2> {temp}</h2>
+                 <img style={{height:'200px'}}src={iconURL} alt="Temperature check"/>
+                    </header>
+                </article>
+                <article className="card">
+                    <header className="card-header">
+                    {props.city}
+                   <h2> {temp}</h2>
+                 <img style={{height:'200px'}}src={iconURL} alt="Temperature check"/>
+                    </header>
+                </article>
+                <article className="card">
+                    <header className="card-header">
+                    {props.city}
+                   <h2> {temp}</h2>
+                 <img style={{height:'200px'}}src={iconURL} alt="Temperature check"/>
+                    </header>
+                </article>
+                
+            </section>
+            // <Card className="weather-container">
+            //     <CardContent>
+
+            //         {props.city}
+            //         <article> {temp}</article>
+            //         <img style={{height:'200px'}}src={iconURL} alt="Temperature check"/>
+            //     </CardContent>
 
 
-            </Card>
+            // </Card>
        
 
 
