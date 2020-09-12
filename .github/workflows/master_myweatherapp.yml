@@ -22,15 +22,12 @@ jobs:
 
     - name: yarn install, build, and test
       run: |
-        yarn cache clean
         yarn install
         yarn build --if-present
-
-
     - name: 'Deploy to Azure Web App'
-      uses: azure/webapps-deploy@v2
+      uses: azure/webapps-deploy@v1
       with:
         app-name: 'myweatherapp'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_A28A76EE757041739A56D19E4F087865 }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_a28a76ee757041739a56d19e4f087865 }}
         package: .
