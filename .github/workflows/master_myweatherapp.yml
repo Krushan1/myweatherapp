@@ -24,6 +24,8 @@ jobs:
       run: |
         yarn install
         yarn build --if-present
+        yarn cache clear
+        
     - name: 'Deploy to Azure Web App'
       uses: azure/webapps-deploy@v1
       with:
